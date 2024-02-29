@@ -13,7 +13,11 @@
     </div>
 
     <div class="col-auto">
-      <span customLabel ></span>
+      <span customLabel
+            [errors]="myForm.get('name')?.errors"
+      >
+        Temporal
+      </span>
     </div>
 
   </div>
